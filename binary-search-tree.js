@@ -99,6 +99,9 @@ class BinarySearchTree {
     }
 
     const findNode = (node, val) => {
+      if (node === null) {
+        return undefined;
+      }
       if (val === node.val) {
         return node;
       } else if (val < node.val) {
